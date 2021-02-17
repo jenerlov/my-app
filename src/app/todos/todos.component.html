@@ -1,19 +1,24 @@
-<div class="todos">
+<div class="todos-div column">
+    
     <form (submit)="addTodo()">
         <input type="text"
                name="inputTodo"
-               placeholder="Enter todo.."
-               class="todo-input"
+               placeholder="Skriv här.."
+               class="todo-input flex center"
                [(ngModel)]="inputTodo"
          />
-         <input type="submit" value="Add Todo" class="todo-submit">
-    </form>
+         <input type="submit" value="Lägg till" class="submit-todo">
+        </form>
+   
 
     <!-- För att loopa igenom alla todos-->
+    
     <div *ngFor="let todo of todos; let i = index;" class="todo {{ (todo.completed ? 'done' : '') }}">
         <div class="id"> {{ i }} </div>
         <!-- Anropar toggle-metoderna -->
         <div class="content" (click)="toggleDone(i)">{{ todo.content }}</div>
-        <button class="delete" (click)="deleteTodo(i)">Remove</button>
+        <button class="remove-button" (click)="deleteTodo(i)">Ta bort</button>
     </div>
+    
+   
 </div>
