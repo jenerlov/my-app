@@ -37,7 +37,7 @@
     outline: none;
 }
 
-.submit-todo:hover {
+.submit-todo:hover , button:hover {
     background: white;
 }
 
@@ -49,6 +49,7 @@
    align-items: center;
    padding: 1rem 2rem ;
    margin-top: 1rem;
+   font-size: .9rem;
    /*background: white;*/
    
 }
@@ -58,9 +59,7 @@
     
 }
 
-
-
-/* REMOVE BUTTON */
+/* TA BORT KNAPPEN */
 .remove-button {
     padding: 0.4rem;
     border-radius: 20rem;
@@ -71,10 +70,11 @@
     display: inline-block; 
     
 }
+/*
 button:hover {
     background: white;
 }
-/*
+
 .todo:last-of-type {
     border-bottom: 0;
 }
