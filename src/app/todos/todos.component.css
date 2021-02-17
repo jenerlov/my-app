@@ -1,56 +1,86 @@
-.todo {
+.todos-div {
     display: flex;
-    padding: 10px 15px;
-    background-color: #fff;
-    border-bottom: 1px solid #DDD;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    min-width: 18rem;   
 }
 
-.todo:nth-child(even) {
-    background-color: #EEE;
+.column {
+    flex-direction: column;
 }
 
+.todo-input {
+    background: white;
+    border: none;
+    display: block;
+    padding: 1rem;
+    width: 10rem;
+}
+
+.id {
+    padding: 1rem;
+}
+
+
+/*SUBMIT KNAPP*/
+
+.submit-todo {
+    display: block;
+    cursor: pointer;
+    min-width: 10rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+      
+    border-radius: 50rem;
+    outline: none;
+}
+
+.submit-todo:hover {
+    background: white;
+}
+
+/* ATT-GÖRA-LISTAN*/
+
+.todo  {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 2rem ;
+   margin-top: 1rem;
+   /*background: white;*/
+   
+}
+
+.todo.done .content {
+    text-decoration: line-through;   
+    
+}
+
+
+
+/* REMOVE BUTTON */
+.remove-button {
+    padding: 0.4rem;
+    border-radius: 20rem;
+    outline: none;
+    font-size: .9rem;
+    margin: 1rem;
+    cursor: pointer;
+    display: inline-block; 
+    
+}
+button:hover {
+    background: white;
+}
+/*
 .todo:last-of-type {
     border-bottom: 0;
 }
 
-.todo .id {
-    flex: 1 1 50px;
+.todo:nth-child(even) {
+    background-color: #EEE;
+    
 }
-
-.todo .content {
-    flex: 1 1 100%;
-}
-
-.todo.done .content {
-    text-decoration: line-through;
-}
-
-.todo-input {
-    display: block;
-    width: 100%;
-    padding: 10px 15px;
-    appearance: none;
-    border: none;
-    background-color: #f3f3f3;
-    margin-top: 15px;
-    font-size: 20px;
-    outline: none;
-}
-
-.todo-submit {
-    display: block;
-    width: 100%;
-    max-width: 200px;
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-
-    background-color: #fe4880;
-    color: #FFF;
-    margin: 15px auto;
-
-    padding: 10px 15px;
-    font-size: 18px;
-    font-weight: 700;
-}
+*/
