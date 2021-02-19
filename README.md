@@ -1,3 +1,11 @@
+# Hur man startar programmet
+
+- npm och node måste vara installerat på datorn.
+- ladda ner Angular genom att köra `npm install -g @angular/cli`.
+- När du sedan ska startar servern är det viktigt att du står i rätt mapp, använd `cd my-app` för detta (my-app är namnet på mappen),
+ och sedan `ng serve -o` för att servern ska starta på  `http://localhost:4200/`.
+
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
