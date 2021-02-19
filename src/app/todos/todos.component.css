@@ -23,7 +23,6 @@
     padding: 1rem;
 }
 
-
 /*SUBMIT KNAPP*/
 
 .submit-todo {
@@ -70,17 +69,3 @@
     display: inline-block; 
     
 }
-/*
-button:hover {
-    background: white;
-}
-
-.todo:last-of-type {
-    border-bottom: 0;
-}
-
-.todo:nth-child(even) {
-    background-color: #EEE;
-    
-}
-*/

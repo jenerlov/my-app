@@ -17,17 +17,19 @@ export class TodosComponent implements OnInit {
   ngOnInit(): void {
     this.todos = [
       {
-        content: 'First todo',
+        content: 'Göra läxor',
         completed: false
       },
       {
-        content: 'Second todo',
+        content: 'Köpa godis',
         completed: false
       },
     ]
   }
-// Loopar igenom alla todos för att se om de är färdiga.
-// Vi accepterar bara number
+
+// Loopar igenom alla todos för att se om de är färdiga. 
+// ser till att när man klickar på en todo, och den är klar så blir den genomstruken.
+// Om id matchar index så är den klar och kan strykas.
   toggleDone(id:number) {
     this.todos.map((v, i) => {
       if (i == id) v.completed = !v.completed;
@@ -35,17 +37,17 @@ export class TodosComponent implements OnInit {
       return v;
     })
   }
-  // Tar bort todos från  listan
-  deleteTodo (id:number) {
+  // Remove-knappen som tar bort todos från listan om de är färdiga.
+  removeTodo (id:number) {
     this.todos = this.todos.filter((v, i) => i !== id);
   }
-  // Lägger till todos i listan
+  //Lägger till todos i listan
   addTodo () {
     this.todos.push({
       content: this.inputTodo,
       completed: false
     })
-    // Rensar todo-fältet
+    // Rensar todo-fälet
     this.inputTodo = "";
   }
 }

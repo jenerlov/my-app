@@ -1,11 +1,10 @@
 <div class="todos-div column">
-    
     <form (submit)="addTodo()">
         <input type="text"
                name="inputTodo"
                placeholder="Skriv här.."
                class="todo-input flex center"
-               [(ngModel)]="inputTodo"
+               [(ngModel)]="inputTodo" 
          />
          <input type="submit" value="Lägg till" class="submit-todo">
         </form>
@@ -17,8 +16,6 @@
         <div class="id"> {{ i }} </div>
         <!-- Anropar toggle-metoderna -->
         <div class="content" (click)="toggleDone(i)">{{ todo.content }}</div>
-        <button class="remove-button" (click)="deleteTodo(i)">Ta bort</button>
-    </div>
-    
-   
+        <button class="remove-button" (click)="removeTodo(i)">Ta bort</button>
+    </div>     
 </div>
